@@ -11,11 +11,22 @@ const specialCharacters = "~!@#$%^&*()_+`-=";
 function generatePassword(){
 console.log("Button was pressed");
 
+//series of prompts
+//2.uppercase
+//3. lowercase
+//4. numbers
+//5. special
+
 var passwordLength = parseInt(prompt("Choose a password length between 8 and 128 characters"));
 if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
   return "Error. Please selected valid length for password."
 }
 
+
+//validating inputs from users
+//Generate password with the info provided
+
+return passwordLength
 }
 
 // Write password to the #password input
